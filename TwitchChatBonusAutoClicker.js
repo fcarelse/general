@@ -1,19 +1,3 @@
-// Older
-var interval = setInterval(a=>document
-	.querySelector('[data-test-selector="community-points-summary"]')
-	.querySelectorAll('div')
-	.forEach((a, i)=>i<5 || a?.click())
-	,20000
-);
-
-// June 2021
-var interval = setInterval(
-	$=>document.querySelector('[data-test-selector="community-points-summary"]')
-	.querySelectorAll('div')
-	.forEach((a, i)=>i==20 || a?.click())
-	,20000
-);
-
 // current May 2022 using Tampermonkey
 
 // ==UserScript==
@@ -21,7 +5,7 @@ var interval = setInterval(
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
-// @author       You
+// @author       Francis Carelse
 // @match        https://www.twitch.tv/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitch.tv
 // @grant        none
@@ -46,4 +30,25 @@ var interval = setInterval(
         },
     };
     console.log('Twitch Autoclicker Activated');
+
+	/*
+// Older
+var interval = setInterval(a=>document
+	.querySelector('[data-test-selector="community-points-summary"]')
+	.querySelectorAll('div')
+	.forEach((a, i)=>i<5 || a?.click())
+	,20000
+);
+
+// June 2021
+var interval = setInterval(
+	$=>document.querySelector('[data-test-selector="community-points-summary"]')
+	.querySelectorAll('div')
+	.forEach((a, i)=>i==20 || a?.click())
+	,20000
+);
+*/
+
+
 })();
+
